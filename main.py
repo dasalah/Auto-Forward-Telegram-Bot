@@ -4,10 +4,10 @@ from telethon.tl.custom.message import Message
 ### config information
 
 # Replace Your Api-ID And Api-Hash From my.Telegram.org
-api_id = int(input("Insert API_ID"))
-api_hash=int(input("Insert API_HASH"))
+api_id = int(input("Insert API_ID:"))
+api_hash=str(input("Insert API_HASH:"))
 # Replace the group ID you want messages forwarded to.
-Group_id = str(input("Insert GROUP ID (with -):"))
+Group_id = int(input("Insert GROUP ID (with -):"))
 
 ### config information
 
