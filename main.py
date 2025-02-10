@@ -1,14 +1,13 @@
 from telethon import TelegramClient, events
 from telethon.tl.custom.message import Message
 
-
 ### config information
 
 # Replace Your Api-ID And Api-Hash From my.Telegram.org
-api_id= 7960798
-api_hash="481fb8835f23b673264c49abfc092122"
+api_id = int(input("Insert API_ID"))
+api_hash=int(input("Insert API_HASH"))
 # Replace the group ID you want messages forwarded to.
-Group_id = -1002333182557
+Group_id = str(input("Insert GROUP ID (with -):"))
 
 ### config information
 
@@ -25,7 +24,6 @@ async def forward_messages(event : Message):
    fist_name = DataUser.first_name
    last_name = DataUser.last_name if DataUser.last_name else '' #don't show last name and return None
    username = f"sender name:` {fist_name} {last_name} ` \nsender id: [{DataUser.id}](tg://user?id={DataUser.id})"
-
 
    if event.message.media and hasattr(event.message.media, 'ttl_seconds') :#if event is have Self-Destructing Messages
 
