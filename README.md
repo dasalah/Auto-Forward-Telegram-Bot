@@ -15,6 +15,7 @@ and `pip install telethon`
 Then clone the repository:  
 `git clone https://github.com/dasalah/Auto-Forward-Telegram-Bot.git
 cd Auto-Forward-Telegram-Bot `  
+
 run python file:  
 `python3 main.py
 `
