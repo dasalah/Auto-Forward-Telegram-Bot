@@ -6,8 +6,7 @@ from telethon.tl.custom.message import Message
 # you can Replace Your Api-ID And Api-Hash From my.Telegram.org
 api_id = 29793455
 api_hash= "b5da6c4d2b72ee566b2451fcb91e4ee2"
-client = TelegramClient('ForwardBot', api_id, api_hash,
-                        proxy=("HTTP","127.0.0.1",8087))
+client = TelegramClient('ForwardBot', api_id, api_hash,)
 
 
 # Replace the group/user ID you want messages forwarded to.
