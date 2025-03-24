@@ -16,8 +16,6 @@ Group_id = int(input("Insert GROUP ID (with -) Or USER ID you want the messages 
 ### config information
 
 
-
-
 @client.on(events.NewMessage(incoming=True,func=lambda e: e.is_private))
 
 async def forward_messages(event : Message):
